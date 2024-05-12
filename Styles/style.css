@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --primary-color: rgb(239, 239, 239);
+    --secondary-color: rgb(76, 223, 245);
+    --title-font: 'Montserrat', sans-serif;
+    --title-font-weight: 700;
+    --text-font: 'Montserrat', sans-serif;
+    --text-font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--title-font);
+    font-weight: var(--title-font-weight);
+}
+
+p,
+a,
+label {
+    font-family: var(--text-font);
+    font-weight: var(--text-font-weight);
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed;
+    min-width: 100%;
+    z-index: 1000; */
+}
+
+header img {
+    width: 80px;
+    margin-left: 50px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+section {
+    padding: 40px;
+}
+
+#aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    color: black;
+}
+
+#aboutus h1 {
+    font-size: 40px;
+}
+
+#aboutus p {
+    width: 70%;
+}
+
+#principal,
+#services {
+    text-align: center;
+}
+
+#services h2,
+#contact h2 {
+    font-size: 30px;
+}
+
+#principal .container-grid-principal,
+#services .container-grid-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+#principal .card,
+#services .card {
+    background-color: var(--primary-color);
+    padding: 30px;
+    box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.16);
+    border-radius: 20px;
+    transition: 0.3 transform;
+    margin: 10px;
+}
+
+#principal .card:hover,
+#services .card a {
+    transform: scale(1.03);
+}
+
+#services .card a {
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    padding: 5px;
+    margin: 10px auto;
+    width: 50%;
+    display: block;
+    color: white;
+    border-radius: 5px;
+}
+
+#services {
+    background-color: azure;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form * {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+}
+
+form {
+    width: 50%;
+    padding: 30px;
+    margin: auto;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+}
+
+form input,
+textarea {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#contact button {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 5px;
+    margin: 10px auto;
+    width: 50%;
+    display: block;
+    color: white;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
