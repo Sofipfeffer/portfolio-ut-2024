@@ -25,6 +25,7 @@ a,
 label {
     font-family: var(--text-font);
     font-weight: var(--text-font-weight);
+    line-height: 22px;
 }
 
 header {
@@ -33,20 +34,21 @@ header {
     padding: 20px;
     align-items: center;
     justify-content: space-between;
-    /* position: fixed;
+    position: fixed;
     min-width: 100%;
-    z-index: 1000; */
+    z-index: 1000;
 }
 
 header img {
     width: 80px;
-    margin-left: 50px;
+    margin-left: 60px;
 }
 
 header nav ul {
     display: flex;
     gap: 20px;
     list-style: none;
+    margin-right: 90px;
 }
 
 header nav ul li a {
@@ -68,7 +70,7 @@ section {
     align-items: center;
     background-size: cover;
     color: black;
-    min-height: 50vh;
+    min-height: 60vh;
     background-color: var(--secondary-color);
 }
 
@@ -83,7 +85,6 @@ section {
 
 #aboutus p {
     width: 80%;
-    line-height: 22px;
 }
 
 #principal img {
@@ -135,11 +136,16 @@ section {
     transform: scale(1.03);
 }
 
+#services img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
 #services .card a {
     text-decoration: none;
     background-color: var(--secondary-color);
     padding: 5px;
-    margin: 10px auto;
+    margin: 30px auto 0 auto;
     width: 8rem;
     display: block;
     color: black;
@@ -203,8 +209,8 @@ footer {
     color: white;
     padding: 10px;
     text-align: left;
-    min-height: 12vh;
-    padding: 80px 0 0 100px;
+    min-height: 15vh;
+    padding: 80px 0 30px 100px;
     display: flex;
     flex-direction: column;
 }
