@@ -30,6 +30,7 @@ label {
 
 header {
     background-color: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     padding: 20px;
     align-items: center;
@@ -37,6 +38,7 @@ header {
     position: fixed;
     min-width: 100%;
     z-index: 1000;
+    top: 0;
 }
 
 header img {
@@ -68,10 +70,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
     color: black;
     min-height: 60vh;
     background-color: var(--secondary-color);
+    margin-top: 60px;
 }
 
 #aboutus img {
@@ -281,4 +283,24 @@ footer i {
 
 .whatsapp-btn a:hover {
     background-color: #128c7e;
+}
+
+@media (max-width: 880px) {
+
+    #principal .container-grid-principal,
+    #services .container-grid-services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+
+    #principal .container-grid-principal,
+    #services .container-grid-services {
+        grid-template-columns: 1fr;
+    }
+
+    #aboutus {
+        flex-direction: column;
+    }
 }
