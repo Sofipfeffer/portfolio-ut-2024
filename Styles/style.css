@@ -291,9 +291,17 @@ footer i {
     #services .container-grid-services {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    #aboutus {
+        flex-direction: column;
+    }
+
+    #aboutus img {
+        width: 300px;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 
     #principal .container-grid-principal,
     #services .container-grid-services {
@@ -302,5 +310,17 @@ footer i {
 
     #aboutus {
         flex-direction: column;
+    }
+
+    #aboutus h1 {
+        font-weight: 20px;
+    }
+
+    #aboutus img {
+        width: 150px;
+    }
+
+    header img {
+        margin-left: 30px;
     }
 }
